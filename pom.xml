@@ -5,7 +5,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>springcourse.practice</groupId>
-    <artifactId>Project1</artifactId>
+    <artifactId>Project2</artifactId>
     <version>1.0-SNAPSHOT</version>
     <packaging>war</packaging>
 
@@ -14,7 +14,8 @@
         <maven.compiler.source>11</maven.compiler.source>
         <maven.compiler.target>11</maven.compiler.target>
 
-        <spring.version>5.2.1.RELEASE</spring.version>
+        <spring.version>5.3.5</spring.version>
+        <hibernate.version>5.4.28.Final</hibernate.version>
     </properties>
 
     <dependencies>
@@ -80,10 +81,29 @@
             <artifactId>postgresql</artifactId>
             <version>42.2.18</version>
         </dependency>
+
+        <dependency>
+            <groupId>org.hibernate</groupId>
+            <artifactId>hibernate-core</artifactId>
+            <version>${hibernate.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-orm</artifactId>
+            <version>${spring.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework.data</groupId>
+            <artifactId>spring-data-jpa</artifactId>
+            <version>2.4.7</version>
+        </dependency>
     </dependencies>
 
+
     <build>
-        <finalName>spring-mvc-app1</finalName>
+        <finalName>spring-project2</finalName>
         <pluginManagement>
             <plugins>
                 <plugin>
