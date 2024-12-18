@@ -11,3 +11,5 @@ CREATE TABLE Book (
     year int NOT NULL,
     person_id int REFERENCES Person(id) ON DELETE SET NULL
 );
+
+ALTER TABLE Book ADD COLUMN taken_at TIMESTAMP;
